@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Player extends React.Component {
     
     getSeasons() {
@@ -104,7 +105,7 @@ class Player extends React.Component {
                             </div>
                         </div>
                         <div className="header-right">
-                            <img src="https://vignette.wikia.nocookie.net/splintercell/images/3/39/Unknown_male.jpg" width="100" alt={this.props.name} />
+                            <img src={require('../img/unknown.png')} width="100" alt={this.props.name} />
                         </div>
                     </div>
                     <div className="player-stats">

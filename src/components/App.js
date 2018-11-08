@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
+import logo from '../img/logo.png';
 import SearchFilter from './SearchFilter';
 import PlayerGrid from './PlayerGrid';
 
