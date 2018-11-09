@@ -5,7 +5,8 @@ React app that displays statistics and biographical information for every player
 The data was first scraped from basketball-reference.com using Python,then parsed & cleaned using SAS. The front-end consists of ReactJS & CSS Grid.
 
 #### TODO:
-- Stylize stat box further.
+- Further stylize stat box further.
+- Add or remove the default favicon.
 - Points/rebounds/assists per *minute*?
-- Pull in Years From--To
+- Pull in Years From--To.
 - Add footer?
