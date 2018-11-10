@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-celtics-players/static/css/main.26223a58.chunk.css"
   },
   {
-    "revision": "8e82eda985ff0f1039a97b161341ecbe",
+    "revision": "62c170af7a10121c9bf473556d243032",
     "url": "/react-celtics-players/index.html"
   }
 ];
