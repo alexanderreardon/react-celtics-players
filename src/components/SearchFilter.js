@@ -13,7 +13,7 @@ class SearchFilter extends React.Component {
         return (
             <div className="top-filter">
                 <form>
-                    <input type="text" id="search-input" tabindex="1" ref={ (value) => {this.myValue = value} } placeholder="Type to filter..." onChange={this.filterUpdate.bind(this)}/>
+                    <input type="text" id="search-input" tabIndex="1" ref={ (value) => {this.myValue = value} } placeholder="Type to filter..." onChange={this.filterUpdate.bind(this)}/>
                 </form>
             </div>
         )
