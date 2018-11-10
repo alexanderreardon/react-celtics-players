@@ -72,7 +72,7 @@ input[type=text]:focus {
   background: white;
   border: 2px solid black !important;
   border-radius: 10px;
-  width: 300px;
+  max-width: 300px;
 
 }
 

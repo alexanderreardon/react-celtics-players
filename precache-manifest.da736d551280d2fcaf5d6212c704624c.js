@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/react-celtics-players/static/js/runtime~main.eb736434.js"
   },
   {
-    "revision": "92e2362286dc0353c12a",
-    "url": "/react-celtics-players/static/js/main.92e23622.chunk.js"
+    "revision": "52f2d79c1b500d5cd177",
+    "url": "/react-celtics-players/static/js/main.52f2d79c.chunk.js"
   },
   {
     "revision": "ace62ad78903889e8e0e",
     "url": "/react-celtics-players/static/js/1.ace62ad7.chunk.js"
   },
   {
-    "revision": "958993fccd23eda5d1cb811687c31e66",
+    "revision": "10172bdfccde8a55978ab264ae516e6b",
     "url": "/react-celtics-players/index.html"
   }
 ];
