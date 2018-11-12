@@ -265,7 +265,7 @@ footer p, .footer-source {
 }
 
 /* Mobile Phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .player-grid {
     grid-template-columns: 1fr;
   }
