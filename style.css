@@ -70,7 +70,7 @@ input[type=text]:focus {
 .player {
   margin: 0 auto 25px auto;
   background: white;
-  border: 2px solid black !important;
+  border: 2px solid rgb(15, 65, 15);
   border-radius: 10px;
   max-width: 300px;
 
@@ -196,12 +196,18 @@ input[type=text]:focus {
   font-size: 16px;
 }
 
+/* Page Footer */
+
 footer {
   margin: 45px auto 0 auto;
 }
 
 footer p, .footer-source {
   text-align: center;
+}
+
+.footer-source {
+  color: #efefef;
 }
 
 
