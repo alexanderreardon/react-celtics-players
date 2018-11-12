@@ -1,8 +1,8 @@
 {
-  "name": "player-info",
+  "name": "react-celtics-players",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://alexanderreardon.github.io/react-celtics-players",
+  "homepage": "https://alexanderreardon.github.io/react-celtics-players",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "react": "^16.5.2",

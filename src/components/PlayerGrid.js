@@ -3,6 +3,14 @@ import Player from './Player';
 
 const playerData = require('../data/celtics.json');
 
+const numberWithCommas = (x) => {
+    if (x === null) {
+        return null
+    } else {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+  }
+
 export default ( {filterText} ) => {
     
     const renderPlayers = playerData
@@ -14,7 +22,7 @@ export default ( {filterText} ) => {
             var formattedBirthday = rawBirthday.getMonth() + 1 + '/' + rawBirthday.getDate() + '/' + rawBirthday.getFullYear();
 
             return (
-            <Player  key={player.id} name={player.name} image={player.image} url={player.url} birthDate={formattedBirthday} seasonsPlayed={player.seasonsPlayed}  position={player.position}  weight={player.weight} height={player.height} gamesPlayed={player.gamesPlayed} minutesPlayed={player.minutesPlayed} minutesPerGame={player.minutesPerGame} points={player.points} pointsPerGame={player.pointsPerGame} steals={player.steals} assists={player.assists} assistsPerGame={player.assistsPerGame} rebounds={player.rebounds} reboundsPerGame={player.reboundsPerGame}  />
+            <Player  key={player.id} name={player.name} image={player.image} url={player.url} birthDate={formattedBirthday} seasonsPlayed={player.seasonsPlayed}  position={player.position}  weight={player.weight} height={player.height} gamesPlayed={numberWithCommas(player.gamesPlayed)} minutesPlayed={numberWithCommas(player.minutesPlayed)} minutesPerGame={player.minutesPerGame} points={numberWithCommas(player.points)} pointsPerGame={player.pointsPerGame} steals={player.steals} assists={numberWithCommas(player.assists)} assistsPerGame={player.assistsPerGame} rebounds={numberWithCommas(player.rebounds)} reboundsPerGame={player.reboundsPerGame}  />
             )
     });
         
