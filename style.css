@@ -276,6 +276,8 @@ footer p, .footer-source {
   }
   .player-grid {
     grid-template-columns: 1fr;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   
   .player {
