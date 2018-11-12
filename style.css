@@ -22,6 +22,10 @@ html {
   grid-template-rows: 3;
 }
 
+.root {
+  margin: 0 auto;
+}
+
 .app-header, .header-logo {
   text-align: center;
 }
