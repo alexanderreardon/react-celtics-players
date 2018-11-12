@@ -270,6 +270,10 @@ footer p, .footer-source {
 
 /* Mobile Phone */
 @media screen and (max-width: 750px) {
+  .App {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .player-grid {
     grid-template-columns: 1fr;
   }
