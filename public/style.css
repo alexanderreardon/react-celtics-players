@@ -22,6 +22,10 @@ html {
   grid-template-rows: 3;
 }
 
+.root {
+  margin: 0 auto;
+}
+
 .app-header, .header-logo {
   text-align: center;
 }
@@ -70,7 +74,7 @@ input[type=text]:focus {
 .player {
   margin: 0 auto 25px auto;
   background: white;
-  border: 2px solid black !important;
+  border: 2px solid rgb(15, 65, 15);
   border-radius: 10px;
   max-width: 300px;
 
@@ -196,12 +200,18 @@ input[type=text]:focus {
   font-size: 16px;
 }
 
+/* Page Footer */
+
 footer {
   margin: 45px auto 0 auto;
 }
 
 footer p, .footer-source {
   text-align: center;
+}
+
+.footer-source {
+  color: #efefef;
 }
 
 
@@ -259,13 +269,17 @@ footer p, .footer-source {
 }
 
 /* Mobile Phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+  .App {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .player-grid {
     grid-template-columns: 1fr;
   }
   
   .player {
-    margin: 0 auto 25px auto;
+    margin: 0 0 25px 0;
   }
 }
 
