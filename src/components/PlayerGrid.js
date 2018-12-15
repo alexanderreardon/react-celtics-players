@@ -1,7 +1,9 @@
 import React from 'react';
 import Player from './Player';
 
-const playerData = require('../data/celtics.json');
+
+var currentTeam = 'celtics';
+const playerData = require(`../data/${currentTeam}.json`);
 
 const numberWithCommas = (x) => {
     if (x === null) {
@@ -24,7 +26,7 @@ export default ( {filterText} ) => {
             return (
             <Player  key={player.id} name={player.name} image={player.image} url={player.url} birthDate={formattedBirthday} seasonsPlayed={player.seasonsPlayed}  position={player.position}  weight={player.weight} height={player.height} gamesPlayed={numberWithCommas(player.gamesPlayed)} minutesPlayed={numberWithCommas(player.minutesPlayed)} minutesPerGame={player.minutesPerGame} points={numberWithCommas(player.points)} pointsPerGame={player.pointsPerGame} steals={player.steals} assists={numberWithCommas(player.assists)} assistsPerGame={player.assistsPerGame} rebounds={numberWithCommas(player.rebounds)} reboundsPerGame={player.reboundsPerGame}  />
             )
-    });
+        });
         
     return (
         <div className="player-grid">

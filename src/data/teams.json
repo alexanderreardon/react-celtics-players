@@ -1,0 +1,152 @@
+[
+ {
+   "fullName": "Atlanta Hawks",
+   "teamName": "hawks",
+   "id": 1
+ },
+ {
+   "fullName": "Boston Celtics",
+   "teamName": "celtics",
+   "id": 2
+ },
+ {
+   "fullName": "Brooklyn Nets",
+   "teamName": "nets",
+   "id": 3
+ },
+ {
+   "fullName": "Charlotte Hornets",
+   "teamName": "hornets",
+   "id": 4
+ },
+ {
+   "fullName": "Chicago Bulls",
+   "teamName": "bulls",
+   "id": 5
+ },
+ {
+   "fullName": "Cleveland Cavaliers",
+   "teamName": "cavaliers",
+   "id": 6
+ },
+ {
+   "fullName": "Dallas Mavericks",
+   "teamName": "mavericks",
+   "id": 7
+ },
+ {
+   "fullName": "Denver Nuggets",
+   "teamName": "nuggets",
+   "id": 8
+ },
+ {
+   "fullName": "Detroit Pistons",
+   "teamName": "pistons",
+   "id": 9
+ },
+ {
+   "fullName": "Golden State Warriors",
+   "teamName": "warriors",
+   "id": 10
+ },
+ {
+   "fullName": "Houston Rockets",
+   "teamName": "rockets",
+   "id": 11
+ },
+ {
+   "fullName": "Indiana Pacers",
+   "teamName": "pacers",
+   "id": 12
+ },
+ {
+   "fullName": "Los Angeles Clippers",
+   "teamName": "clippers",
+   "id": 13
+ },
+ {
+   "fullName": "Los Angeles lakers",
+   "teamName": "lakers",
+   "id": 14
+ },
+ {
+   "fullName": "Memphis Grizzlies",
+   "teamName": "grizzlies",
+   "id": 15
+ },
+ {
+   "fullName": "Miami Heat",
+   "teamName": "heat",
+   "id": 16
+ },
+ {
+   "fullName": "Milwaukee Bucks",
+   "teamName": "bucks",
+   "id": 17
+ },
+ {
+   "fullName": "Minnesota Timberwolves",
+   "teamName": "timberwolves",
+   "id": 18
+ },
+ {
+   "fullName": "New Orleans Hornets",
+   "teamName": "hornets",
+   "id": 19
+ },
+ {
+   "fullName": "New York Knicks",
+   "teamName": "knicks",
+   "id": 20
+ },
+ {
+   "fullName": "Oklahoma City Thunder",
+   "teamName": "thunder",
+   "id": 21
+ },
+ {
+   "fullName": "Orlando Magic",
+   "teamName": "magic",
+   "id": 22
+ },
+ {
+   "fullName": "Philadelphia Sixers",
+   "teamName": "sixers",
+   "id": 23
+ },
+ {
+   "fullName": "Phoenix Suns",
+   "teamName": "suns",
+   "id": 24
+ },
+ {
+   "fullName": "Portland Trail Blazers",
+   "teamName": "blazers",
+   "id": 25
+ },
+ {
+   "fullName": "Sacramento Kings",
+   "teamName": "kings",
+   "id": 26
+ },
+ {
+   "fullName": "San Antonio Spurs",
+   "teamName": "spurs",
+   "id": 27
+ },
+ {
+   "fullName": "Toronto Raptors",
+   "teamName": "raptors",
+   "id": 28
+ },
+ {
+   "fullName": "Utah Jazz",
+   "teamName": "jazz",
+   "id": 29
+ },
+ {
+   "fullName": "Washington Wizards",
+   "teamName": "wizards",
+   "id": 30
+ }
+]
