@@ -1,14 +1,34 @@
 import React from 'react';
+import Teams from '../data/teams.json';
 
-const team_names= require('../data/teams.json');
-export default ( {filterText} ) => {
+const defaultValue = 'celtics';
+class TeamFilter extends React.Component {
     
-    const renderTeamOption = team_names.map((team) => <option key={team.id} value={team.teamName}>{team.fullName}</option>)
+    state = {
+        filterTeam: defaultValue
+    }
 
-    return (
-        <select>
-            {renderTeamOption}
-        </select>
-    )
+    teamFilterUpdate = (e) => {
+        this.setState({
+            filterTeam: e.target.value
+        })
+    }
+
+    render() {
+        return (
+            <div className="team-dropdown-div" >
+                <select id="team-dropdown" defaultValue={defaultValue} onChange={this.teamFilterUpdate.bind(this)}>
+                    {Teams.map( (team) => {
+                        return (
+                            <option key={team.id} value={team.teamName} >
+                                {team.fullName}
+                            </option>
+                        )})}
+                </select>
+            </div>
+        )
+    }
 
 }
+
+export default TeamFilter;

@@ -35,6 +35,14 @@ html {
   height: 200px;
 }
 
+/* Team Filter component: */
+.team-dropdown-div {
+  margin: 0 auto;
+}
+
+#team-dropdown {  
+  width: 300px;
+}
 
 /* Search Filter component: */
 .top-filter {

@@ -9,7 +9,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filterText: ''
+      filterText: '',
+      filterTeam: this.props.filterTeam
     }
   }
   
@@ -18,15 +19,16 @@ class App extends Component {
       filterText: value
     })
   }
+
   render() {
     return (
       <div className="App">
         <header className="app-header">
           <img src={logo} className="header-logo" alt="logo" />
         </header>
-        <TeamFilter />
+        <TeamFilter filterTeam={this.state.filterTeam} />
         <SearchFilter filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
-        <PlayerGrid filterText={this.state.filterText}/>
+        <PlayerGrid filterText={this.state.filterText} filterTeam={this.state.filterTeam} />
         <Footer />
 
       </div>

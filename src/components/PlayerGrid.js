@@ -1,10 +1,6 @@
 import React from 'react';
 import Player from './Player';
 
-
-var currentTeam = 'celtics';
-const playerData = require(`../data/${currentTeam}.json`);
-
 const numberWithCommas = (x) => {
     if (x === null) {
         return null
@@ -15,6 +11,9 @@ const numberWithCommas = (x) => {
 
 export default ( {filterText} ) => {
     
+    var currentTeam = "celtics";
+    const playerData = require(`../data/${currentTeam}.json`);
+
     const renderPlayers = playerData
         .filter((player) => {
             return player.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0;
