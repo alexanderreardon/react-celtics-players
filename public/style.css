@@ -41,7 +41,11 @@ html {
 }
 
 #team-dropdown {  
-  width: 300px;
+  margin: 45px auto 0 auto;
+  width: 306px;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif; 
 }
 
 /* Search Filter component: */
@@ -59,7 +63,7 @@ input[type=text] {
   margin: 5px 1px 3px 0px;
   border: 1px solid #DDDDDD;
   font-size: 16px;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
  
 input[type=text]:focus {
@@ -70,6 +74,7 @@ input[type=text]:focus {
 }
 #search-input {
   width: 300px;
+  padding-right: 0;
 }
 
 

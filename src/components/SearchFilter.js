@@ -5,7 +5,7 @@ class SearchFilter extends React.Component {
     filterUpdate() {
         const val = this.myValue.value;
         // console.log(val);
-        this.props.filterUpdate(val);
+        this.props.filterTextUpdate(val);
         
     }
     
@@ -13,7 +13,14 @@ class SearchFilter extends React.Component {
         return (
             <div className="top-filter">
                 <form>
-                    <input type="text" id="search-input" tabIndex="1" ref={ (value) => {this.myValue = value} } placeholder="Search for player..." onChange={this.filterUpdate.bind(this)}/>
+                    <input
+                        type="text"
+                        tabIndex="1"
+                        id="search-input"
+                        placeholder="Search for player..."
+                        ref={ (value) => {this.myValue = value} }
+                        onChange={this.filterUpdate.bind(this)}
+                    />
                 </form>
             </div>
         )

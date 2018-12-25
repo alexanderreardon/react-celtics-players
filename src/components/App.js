@@ -10,13 +10,19 @@ class App extends Component {
     super(props);
     this.state = {
       filterText: '',
-      filterTeam: this.props.filterTeam
+      filterTeam: 'celtics'
     }
   }
   
-  filterUpdate(value) {
+  filterTextUpdate(textValue) {
     this.setState({
-      filterText: value
+      filterText: textValue
+    })
+  }
+
+  filterTeamUpdate(dropdownValue) {
+    this.setState({
+      filterTeam: dropdownValue
     })
   }
 
@@ -26,9 +32,15 @@ class App extends Component {
         <header className="app-header">
           <img src={logo} className="header-logo" alt="logo" />
         </header>
-        <TeamFilter filterTeam={this.state.filterTeam} />
-        <SearchFilter filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
-        <PlayerGrid filterText={this.state.filterText} filterTeam={this.state.filterTeam} />
+        <TeamFilter
+          filterTeam={this.state.filterTeam}
+          filterTeamUpdate={this.filterTeamUpdate.bind(this)} />
+        <SearchFilter
+          filterText={this.state.filterText}
+          filterTextUpdate={this.filterTextUpdate.bind(this)} />
+        <PlayerGrid
+          filterText={this.state.filterText}
+          filterTeam={this.state.filterTeam} />
         <Footer />
 
       </div>
