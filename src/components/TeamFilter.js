@@ -10,9 +10,6 @@ class TeamFilter extends React.Component {
     }
 
     teamFilterUpdate = (e) => {
-        this.setState({
-            filterTeam: e.target.value
-        })
         this.props.filterTeamUpdate(e.target.value);
     }
 
@@ -30,9 +27,10 @@ class TeamFilter extends React.Component {
                                 key={team.id}
                                 value={team.teamName}
                             >
-                                {team.fullName}
+                            {team.fullName}
                             </option>
-                        )})}
+                        )
+                    })}
                 </select>
             </div>
         )

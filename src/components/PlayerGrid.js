@@ -7,9 +7,9 @@ const numberWithCommas = (x) => {
     } else {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-  }
+};
 
-export default ( {filterText, filterTeam} ) => {
+export default ( {filterText, filterTeam, position } ) => {
     
     var currentTeam = filterTeam;
     const playerData = require(`../data/${currentTeam}.json`);
@@ -17,6 +17,9 @@ export default ( {filterText, filterTeam} ) => {
     const renderPlayers = playerData
         .filter( (player) => {
             return player.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0;
+        })
+        .filter( (player) => {
+            return player.position.indexOf(position) >= 0;
         })
         .map( (player) => {
             var rawBirthday = new Date(player.birthDate);
@@ -51,6 +54,5 @@ export default ( {filterText, filterTeam} ) => {
         <div className="player-grid">
             {renderPlayers}
         </div>
-        
     )
 };

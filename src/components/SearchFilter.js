@@ -3,7 +3,7 @@ import React from 'react';
 class SearchFilter extends React.Component {
     
     filterUpdate() {
-        const val = this.myValue.value;
+        const val = this.teamValue.value;
         // console.log(val);
         this.props.filterTextUpdate(val);
         
@@ -18,7 +18,7 @@ class SearchFilter extends React.Component {
                         tabIndex="1"
                         id="search-input"
                         placeholder="Search for player..."
-                        ref={ (value) => {this.myValue = value} }
+                        ref={ (value) => {this.teamValue = value} }
                         onChange={this.filterUpdate.bind(this)}
                     />
                 </form>

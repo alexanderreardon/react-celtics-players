@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../img/logo.png';
 import TeamFilter from './TeamFilter';
+import PositionFilter from './PositionFilter';
 import SearchFilter from './SearchFilter';
 import PlayerGrid from './PlayerGrid';
 import Footer from './Footer';
@@ -10,7 +11,8 @@ class App extends Component {
     super(props);
     this.state = {
       filterText: '',
-      filterTeam: 'celtics'
+      filterTeam: 'celtics',
+      position: ''
     }
   }
   
@@ -20,9 +22,15 @@ class App extends Component {
     })
   }
 
-  filterTeamUpdate(dropdownValue) {
+  filterTeamUpdate(teamValue) {
     this.setState({
-      filterTeam: dropdownValue
+      filterTeam: teamValue
+    })
+  }
+
+  positionFilterUpdate(positionValue) {
+    this.setState({
+      position: positionValue
     })
   }
 
@@ -33,12 +41,15 @@ class App extends Component {
           <img src={logo} className="header-logo" alt="logo" />
         </header>
         <TeamFilter
-          filterTeam={this.state.filterTeam}
           filterTeamUpdate={this.filterTeamUpdate.bind(this)} />
+        <PositionFilter
+          positionFilterUpdate={this.positionFilterUpdate.bind(this)}
+        />
         <SearchFilter
           filterText={this.state.filterText}
           filterTextUpdate={this.filterTextUpdate.bind(this)} />
         <PlayerGrid
+          position={this.state.position}
           filterText={this.state.filterText}
           filterTeam={this.state.filterTeam} />
         <Footer />

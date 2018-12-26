@@ -48,6 +48,19 @@ html {
   font-family: 'Lato', Arial, Helvetica, sans-serif; 
 }
 
+/* Position Filter component: */
+.position-filter {
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+#position-dropdown {
+  margin: 45px auto 0 auto;
+  font-size: 16px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
 /* Search Filter component: */
 .top-filter {
   margin: 50px auto 50px auto;
