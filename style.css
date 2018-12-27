@@ -8,7 +8,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #007A33;
 }
 
 html {
@@ -35,6 +34,31 @@ html {
   height: 200px;
 }
 
+/* Team Filter component: */
+.team-dropdown-div {
+  margin: 0 auto;
+}
+
+#team-dropdown {  
+  margin: 45px auto 0 auto;
+  width: 306px;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif; 
+}
+
+/* Position Filter component: */
+.position-filter {
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+#position-dropdown {
+  margin: 45px auto 0 auto;
+  font-size: 16px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
 
 /* Search Filter component: */
 .top-filter {
@@ -51,7 +75,7 @@ input[type=text] {
   margin: 5px 1px 3px 0px;
   border: 1px solid #DDDDDD;
   font-size: 16px;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
  
 input[type=text]:focus {
@@ -62,6 +86,7 @@ input[type=text]:focus {
 }
 #search-input {
   width: 300px;
+  padding-right: 0;
 }
 
 
