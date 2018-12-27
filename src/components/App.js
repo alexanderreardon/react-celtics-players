@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../img/logo.png';
+import Header from './Header'
 import TeamFilter from './TeamFilter';
 import PositionFilter from './PositionFilter';
 import SearchFilter from './SearchFilter';
@@ -12,10 +12,11 @@ class App extends Component {
     this.state = {
       filterText: '',
       filterTeam: 'celtics',
+      backgroundColor: "#007A33",
       position: ''
     }
   }
-  
+
   filterTextUpdate(textValue) {
     this.setState({
       filterText: textValue
@@ -28,6 +29,12 @@ class App extends Component {
     })
   }
 
+  backgroundColorUpdate(teamColor) {
+    this.setState({
+      backgroundColor: teamColor
+    })
+  }
+
   positionFilterUpdate(positionValue) {
     this.setState({
       position: positionValue
@@ -36,17 +43,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="app-header">
-          <img src={logo} className="header-logo" alt="logo" />
-        </header>
+      <div className="App" style={{background: this.state.backgroundColor}} >
+        <Header filterTeam={this.state.filterTeam} />
         <TeamFilter
-          filterTeamUpdate={this.filterTeamUpdate.bind(this)} />
+          filterTeamUpdate={this.filterTeamUpdate.bind(this)}
+          backgroundColorUpdate={this.backgroundColorUpdate.bind(this)} />
         <PositionFilter
           positionFilterUpdate={this.positionFilterUpdate.bind(this)}
         />
         <SearchFilter
-          filterText={this.state.filterText}
           filterTextUpdate={this.filterTextUpdate.bind(this)} />
         <PlayerGrid
           position={this.state.position}

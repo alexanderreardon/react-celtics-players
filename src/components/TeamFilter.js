@@ -8,9 +8,18 @@ class TeamFilter extends React.Component {
     state = {
         filterTeam: defaultValue
     }
-
+    
     teamFilterUpdate = (e) => {
-        this.props.filterTeamUpdate(e.target.value);
+        var teamInput = e.target.value;
+        this.props.filterTeamUpdate(teamInput);
+        
+        var background = "";
+        for (var i = 0; i < Teams.length;i++) {
+            if (Teams[i].teamName === teamInput) {
+                background = Teams[i].backgroundColor;
+            }
+        }
+        this.props.backgroundColorUpdate(background);
     }
 
     render() {
