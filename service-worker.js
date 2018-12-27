@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/react-celtics-players/precache-manifest.49f8d824e8ad550870e61453dce6f98d.js"
+  "/react-celtics-players/precache-manifest.d9699c4a1792fc1497b200d3eb5d4150.js"
 );
 
 workbox.clientsClaim();
