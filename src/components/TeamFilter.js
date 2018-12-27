@@ -36,7 +36,7 @@ class TeamFilter extends React.Component {
                                 key={team.id}
                                 value={team.teamName}
                             >
-                            {team.fullName}
+                                {team.fullName}
                             </option>
                         )
                     })}
