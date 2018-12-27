@@ -11,7 +11,4 @@ The data was first scraped from basketball-reference.com using Python, then pars
 - Pull in Years From--To.
 - Add footer?
 - Compress all team logo images.
-- Finish uploading all CSV/JSON files for all teams
-    - Review all team CSV files for id errors
-    - Remove CSV files from repo.
 - Dynamically change color of "VIEW STATS" button
