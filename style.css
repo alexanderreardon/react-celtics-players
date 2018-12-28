@@ -41,7 +41,7 @@ html {
 
 #team-dropdown {  
   margin: 45px auto 0 auto;
-  width: 306px;
+  width: 205px;
   height: 30px;
   font-size: 16px;
   font-family: 'Lato', Arial, Helvetica, sans-serif; 
@@ -55,7 +55,7 @@ html {
 }
 
 #position-dropdown {
-  margin: 45px auto 0 auto;
+  margin: 60px auto 0 auto;
   font-size: 16px;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
@@ -85,7 +85,7 @@ input[type=text]:focus {
   border: 1px solid rgb(15, 65, 15);
 }
 #search-input {
-  width: 300px;
+  width: 205px;
   padding-right: 0;
 }
 
@@ -295,16 +295,12 @@ footer p, .footer-source {
 
 /* Mobile Phone */
 @media screen and (max-width: 750px) {
-  .App {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
   .player-grid {
     grid-template-columns: 1fr;
   }
   
   .player {
-    margin: 0 0 25px 0;
+    margin: 0 auto 25px auto;
   }
 }
 
