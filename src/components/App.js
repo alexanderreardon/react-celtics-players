@@ -43,8 +43,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" style={{background: this.state.backgroundColor}} >
-        <Header filterTeam={this.state.filterTeam} />
+      <div className="App" style={{ background: this.state.backgroundColor }} >
+        <Header
+          filterTeam={this.state.filterTeam} />
         <TeamFilter
           filterTeamUpdate={this.filterTeamUpdate.bind(this)}
           backgroundColorUpdate={this.backgroundColorUpdate.bind(this)} />
