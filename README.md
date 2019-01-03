@@ -10,3 +10,5 @@ The data was first scraped from basketball-reference.com using Python, then pars
 - Points/rebounds/assists per *minute*?
 - Pull in Years From--To.
 - Dynamically change color of "VIEW STATS" button
+- Change the Rockets logo
+- Change unknown player photo
