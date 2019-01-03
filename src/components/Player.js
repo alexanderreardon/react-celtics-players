@@ -11,8 +11,6 @@ class Player extends React.Component {
         }
     }
 
-    component
-    
     render() {
         return (
             <div className="player">
