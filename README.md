@@ -9,5 +9,4 @@ The data was first scraped from basketball-reference.com using Python, then pars
 - Add or remove the default favicon.
 - Points/rebounds/assists per *minute*?
 - Pull in Years From--To.
-- Compress all team logo images.
 - Dynamically change color of "VIEW STATS" button

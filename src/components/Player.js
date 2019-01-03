@@ -10,6 +10,8 @@ class Player extends React.Component {
             return this.props.seasonsPlayed + " seasons"
         }
     }
+
+    component
     
     render() {
         return (
