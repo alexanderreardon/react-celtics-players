@@ -36,11 +36,11 @@ html {
 
 /* Team Filter component: */
 .team-dropdown-div {
-  margin: 0 auto;
+  text-align: center;
 }
 
 #team-dropdown {  
-  margin: 45px auto 0 auto;
+  margin-top: 45px;
   width: 205px;
   height: 30px;
   font-size: 16px;
@@ -49,20 +49,21 @@ html {
 
 /* Position Filter component: */
 .position-filter {
-  margin: 0 auto;
+  
   text-align: center;
   
 }
 
 #position-dropdown {
-  margin: 60px auto 0 auto;
+  margin-top: 60px;
   font-size: 16px;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 /* Search Filter component: */
 .top-filter {
-  margin: 50px auto 50px auto;
+  margin: 50px 10% 50px 10%;
+  text-align: center;
 }
 input[type=text] {
   -webkit-transition: all 0.30s ease-in-out;
@@ -97,7 +98,7 @@ input[type=text]:focus {
 }
 
 .player {
-  margin: 0 auto 25px auto;
+  margin-bottom: 25px;
   background: white;
   border: 2px solid rgb(15, 65, 15);
   border-radius: 10px;
@@ -300,7 +301,7 @@ footer p, .footer-source {
   }
   
   .player {
-    margin: 0 auto 25px auto;
+    margin: 0 10px 25px 10px;
   }
 }
 
